@@ -1,1 +1,1 @@
-export const EasyDomTesting = {}
+export const EasyDomTesting = {};
