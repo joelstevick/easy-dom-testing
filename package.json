@@ -1,0 +1,24 @@
+{
+  "name": "easy-dom-testing",
+  "version": "1.0.0",
+  "description": "Easy DOM testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelstevick/easy-dom-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelstevick/easy-dom-testing/issues"
+  },
+  "homepage": "https://github.com/joelstevick/easy-dom-testing#readme",
+  "devDependencies": {
+    "typescript": "^4.4.2"
+  }
+}
