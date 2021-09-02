@@ -2,7 +2,8 @@
   "name": "easy-dom-testing",
   "version": "1.0.0",
   "description": "Easy DOM testing",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
@@ -10,14 +11,19 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joelstevick/easy-dom-testing.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Angular", "Testing", "DOM"],
+  "author": "Joel Stevick",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/joelstevick/easy-dom-testing/issues"

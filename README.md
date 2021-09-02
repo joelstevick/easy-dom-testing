@@ -1,1 +1,1 @@
-Easy DOM testing
+Easy DOM testing - work in progress, not yet ready 
