@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joelstevick/easy-dom-testing.git"
+    "url": "git+https://github.com/joelstevick/ng-testing-kit.git"
   },
   "keywords": [
     "Angular",
@@ -30,9 +30,9 @@
   "author": "Joel Stevick",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joelstevick/easy-dom-testing/issues"
+    "url": "https://github.com/joelstevick/ng-testing-kit/issues"
   },
-  "homepage": "https://github.com/joelstevick/easy-dom-testing#readme",
+  "homepage": "https://github.com/joelstevick/ng-testing-kit#readme",
   "devDependencies": {
     "@types/jest": "^27.0.1",
     "@types/lodash": "^4.14.172",
