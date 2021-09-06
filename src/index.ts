@@ -1,5 +1,3 @@
-import { mergeConfig } from './api/merge-config';
+import {mergeConfig as _mergeConfig} from './api/merge-config'
 
-export const NgTestingKit = {
-  mergeConfig,
-};
+export const mergeConfig = _mergeConfig;
