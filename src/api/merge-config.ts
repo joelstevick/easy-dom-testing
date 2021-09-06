@@ -1,9 +1,9 @@
 import { mergeObjects } from "../util/merge-objects";
 
-export const mergeConfig = (...config: Array<any>) => {
+export const mergeConfig = (...configs: Array<any>) => {
    let mergedConfig: any = {};
 
-   config.forEach(config => {
+   configs.forEach(config => {
        mergedConfig = mergeObjects(mergedConfig, config);
    })
 

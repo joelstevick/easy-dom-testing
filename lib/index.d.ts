@@ -1,1 +1,3 @@
-export declare const EasyDomTesting: {};
+export declare const NgTestingKit: {
+    mergeConfig: (...config: any[]) => any;
+};
