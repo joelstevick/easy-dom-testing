@@ -1,3 +1,1 @@
-export declare const NgTestingKit: {
-    mergeConfig: (...configs: any[]) => any;
-};
+export declare const mergeConfig: (...configs: any[]) => any;
