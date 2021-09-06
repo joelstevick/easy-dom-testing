@@ -4,4 +4,4 @@ import { POM as _POM } from './api/pom/pom';
 // api
 export const mergeConfig = _mergeConfig;
 
-export const POM = _POM;
+export type POM = _POM;
