@@ -1,4 +1,4 @@
-import { mergeObjects } from '../util/merge-objects';
+import { mergeObjects } from '../../util/merge-objects';
 
 export const mergeConfig = (...configs: any[]) => {
   let mergedConfig: any = {};
