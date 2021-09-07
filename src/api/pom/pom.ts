@@ -1,8 +1,8 @@
-export type PomConfigHandler = (context: any) => any;
-
+export type PomActionHandler = (context: unknown, ...args: unknown[]) => unknown;
+export type PomValidateHandler = (context: unknown) => unknown;
 export interface PomConfig {
-  validate: Record<string, PomConfigHandler>;
-  actions: Record<string, PomConfigHandler>;
+  validate: Record<string, PomValidateHandler>;
+  actions: Record<string, PomActionHandler>;
 }
 
 export class POM {
@@ -16,12 +16,12 @@ export class POM {
     this.config.validate[state](this.context);
   }
 
-  action(state: string) {
+  action(state: string, ...args: unknown[]) {
     if (!this.config.actions[state]) {
       throw new Error(`unrecognized action state: ${state}, check your pom config file actions-property`);
     }
 
-    this.config.actions[state](this.context);
+    this.config.actions[state](this.context, ...args);
 
     this.validate(state);
   }
