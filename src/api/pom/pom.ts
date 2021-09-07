@@ -1,8 +1,12 @@
 export type PomActionHandler = (context: unknown, ...args: unknown[]) => unknown;
+export interface PomAction {
+  'state-transition': string;
+  action: PomActionHandler;
+}
 export type PomValidateHandler = (context: unknown) => unknown;
 export interface PomConfig {
   validate: Record<string, PomValidateHandler>;
-  actions: Record<string, PomActionHandler>;
+  actions: Record<string, PomAction>;
 }
 
 export class POM {
@@ -21,8 +25,8 @@ export class POM {
       throw new Error(`unrecognized action state: ${state}, check your pom config file actions-property`);
     }
 
-    this.config.actions[state](this.context, ...args);
+    this.config.actions[state].action(this.context, ...args);
 
-    this.validate(state);
+    this.validate(this.config.actions[state]['state-transition']);
   }
 }
