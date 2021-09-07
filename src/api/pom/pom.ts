@@ -1,6 +1,6 @@
 export type PomActionHandler = (context: unknown, ...args: unknown[]) => unknown;
 export interface PomAction {
-  'state-transition'?: string;
+  'state-transition': string | null;
   action: PomActionHandler;
 }
 export type PomValidateHandler = (context: unknown) => unknown;
