@@ -1,6 +1,6 @@
 export type PomActionHandler = (context: unknown, ...args: unknown[]) => unknown;
 export interface PomAction {
-  'state-transition': string;
+  'state-transition'?: string;
   action: PomActionHandler;
 }
 export type PomValidateHandler = (context: unknown) => unknown;
@@ -27,6 +27,8 @@ export class POM {
 
     this.config.actions[state].action(this.context, ...args);
 
-    this.validate(this.config.actions[state]['state-transition']);
+    if (this.config.actions[state]['state-transition']) {
+      this.validate(this.config.actions[state]['state-transition']!);
+    }
   }
 }
