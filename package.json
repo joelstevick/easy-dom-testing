@@ -1,6 +1,6 @@
 {
   "name": "ng-testing-kit",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Utilities for easy DOM testing",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
