@@ -1,7 +1,7 @@
 {
   "name": "ng-testing-kit",
   "version": "1.0.13",
-  "description": "Utilities for easy DOM testing",
+  "description": "Utilities for easy DOM testing using the page-object-model pattern",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joelstevick/ng-testing-kit.git"
+    "url": "git+https://github.com/joelstevick/ng-pom-testing.git"
   },
   "keywords": [
     "Angular",
@@ -30,9 +30,9 @@
   "author": "Joel Stevick",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joelstevick/ng-testing-kit/issues"
+    "url": "https://github.com/joelstevick/ng-pom-testing/issues"
   },
-  "homepage": "https://github.com/joelstevick/ng-testing-kit#readme",
+  "homepage": "https://github.com/joelstevick/ng-pom-testing#readme",
   "devDependencies": {
     "@types/jest": "^27.0.1",
     "@types/lodash": "^4.14.172",
