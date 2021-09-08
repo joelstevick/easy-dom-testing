@@ -22,3 +22,7 @@ The configuration object specifies the various states that your component can en
 When your test invokes an action, the POM automatically applies your configured validation logic for the new state.
 
 [This example]() illustrates how to use *mergeConfig* and *POM*. 
+
+Notes:
+- a common configuration object is used when setting up testing-library; only those declarations and providers that are specific to the tested component are included *in* the describe block.  You should adopt this pattern for you own project to reduce boilerplate.
+- 
