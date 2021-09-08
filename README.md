@@ -1,1 +1,2 @@
-Easy DOM testing - work in progress, not yet ready 
+# Introduction
+The purpose of this cmodule is to provide features that compliment Angular Testbed.  It is reccommended that you utilize one of the available tools that wrap Angular Testbed: [Spectator](https://netbasal.com/spectator-v4-a-powerful-tool-to-simplify-your-angular-tests-bd65a0bf317e) or [Testing-Library](https://testing-library.com/docs/angular-testing-library/intro/)
