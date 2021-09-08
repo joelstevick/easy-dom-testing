@@ -17,4 +17,5 @@ This module compliments *Angular Testbed*.  We suggest that you use one of the a
     
     const pom = new POM({ container, detectChanges}, pomConfig);
     
-    see [this example]()
+
+[This example]() illustrates how *mergeConfig* and *POM* can be used. 
