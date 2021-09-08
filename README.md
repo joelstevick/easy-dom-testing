@@ -3,6 +3,7 @@ The purpose of this module is to provide features that compliment Angular Testbe
 
 1. mergeConfig(...args) - this function accepts a list of configuration objects that should be merged.  Precedence follows the es6 implementation of Object.assign().  The merge operation is "deep."  Arrays are not replaced -- the entries are concatenated.   For example,
 
-        
+
         console.log(mergeConfig({ imports: [ReactiveFormsModule]}, { imports: [MaterialModule]}))
-        // {providers: [ReactiveFormsModule, MaterialModule]}
+        
+        // {imports: [ReactiveFormsModule, MaterialModule]}
