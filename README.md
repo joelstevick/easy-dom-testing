@@ -17,7 +17,7 @@ This module compliments *Angular Testbed*.  We suggest that you use one of the a
     
     const pom = new POM({ container, detectChanges}, pomConfig);
     
-    The configuration object specifies the various states that your component can enter and how to validate those states.  The configuration object also defines the actions that can be taken: the steps to be performed and the new state for the component after each action is completed.  
+    The POM configuration object specifies the various states that your component can enter and how to validate those states.  The POM configuration object also defines the actions that can be taken: the steps to be performed and the new state for the component after each action is completed.  
 
     When your test invokes an action, the POM automatically applies your configured validation logic for the new state.
 
