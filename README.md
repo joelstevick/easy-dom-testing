@@ -16,5 +16,5 @@ This module compliments *Angular Testbed*.  We suggest that you use one of the a
 2. **POM** - implements the [page-object-model pattern](https://martinfowler.com/bliki/PageObject.html). 
     
     const pom = new POM({ container, detectChanges}, pomConfig);
-
-see [this example]()
+    
+    see [this example]()
