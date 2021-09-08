@@ -25,4 +25,6 @@ This module compliments *Angular Testbed*.  We suggest that you use one of the a
 
 Notes:
 - a common configuration object is used when setting up testing-library (calling render()); only those declarations and providers that are specific to the tested component are included *in* the describe block.  You should adopt this pattern for you own project to reduce boilerplate.
-- 
+  
+
+***This page is under construction...***
