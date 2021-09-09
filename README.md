@@ -25,7 +25,7 @@ In addition to using these tools, you should learn how to use *[ng-mocks](https:
 
 [This example]() illustrates how to use *mergeConfig* and *POM*. 
 
-##Notes
+## Notes
 - a common configuration object is used when setting up testing-library (the call to *render()*); only those declarations and providers that are specific to the tested component are included *in* the describe block.  You should adopt this pattern for you own project to reduce boilerplate.
   
 
