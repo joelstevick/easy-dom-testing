@@ -17,7 +17,9 @@ In addition to using these tools, you should learn how to use (*MockComponent*, 
 
         // {imports: [ReactiveFormsModule, MaterialModule]}
 
-2. **POM** - implements the [page-object-model pattern](https://martinfowler.com/bliki/PageObject.html).  The POM is generated using a *finite state machine* driven from a configuration object that you set up.  The POM imlements an api for the underlying testing library (testing-library, spectator, or angular testbed -- directly) similar to how a [test harness](https://en.wikipedia.org/wiki/Test_harness) implements an api for component instance.
+2. **POM** - implements the [page-object-model pattern](https://martinfowler.com/bliki/PageObject.html).  The POM is generated using a *finite state machine* driven from a configuration object that you set up.  
+
+The POM imlements an api for the underlying testing library (testing-library, spectator, or angular testbed -- directly) similar to how a [test harness](https://en.wikipedia.org/wiki/Test_harness) implements an api for component instance.
     
     const pom = new POM({ container, detectChanges}, pomConfig);
     
