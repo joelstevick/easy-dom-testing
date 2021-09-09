@@ -1,7 +1,7 @@
 # Introduction
 This module compliments *Angular Testbed*.  We suggest that you use one of the available helper-libraries that wrap Angular Testbed: [Spectator](https://netbasal.com/spectator-v4-a-powerful-tool-to-simplify-your-angular-tests-bd65a0bf317e) or [Testing-Library](https://testing-library.com/docs/angular-testing-library/intro/).
 
-In addition to using these tools, you should learn how to use *[ng-mocks](https://ng-mocks.sudo.eu/extra/quick-start)*  -- then you will be able to write high-value, high-quality tests.
+In addition to using these tools, you should learn how to use *[ng-mocks](https://ng-mocks.sudo.eu/extra/quick-start)*  -- then you will be able to write high-quality, low-boilerplate tests.
 
 1. **mergeConfig()** - accepts a list of configuration objects.  Precedence follows the es6 implementation of Object.assign().  The merge operation is "deep."  Arrays are not replaced -- the entries are concatenated. 
 
