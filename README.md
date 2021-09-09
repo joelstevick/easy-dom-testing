@@ -19,7 +19,7 @@ In addition to using these tools, you should learn how to use (*MockComponent*, 
 
 2. **POM** - implements the [page-object-model pattern](https://martinfowler.com/bliki/PageObject.html).  The POM is generated using a *finite state machine* driven from a configuration object that you set up.  
 
-The POM imlements an api for the underlying testing library (testing-library, spectator, or angular testbed -- directly) similar to how a [test harness](https://en.wikipedia.org/wiki/Test_harness) implements an api for component instance.  For example, you may want to define a single action in a test that interacts with more than a single component -- this capability is out-of-scope for test harnesses.
+The POM imlements an api for the underlying testing library (testing-library, spectator, or angular testbed -- directly) similar to how a [test harness](https://en.wikipedia.org/wiki/Test_harness) implements an api for interacting with a component instance.  For example, you may want to define a single action in a test that interacts with more than a single component -- this capability is out-of-scope for test harnesses.
     
     const pom = new POM({ container, detectChanges}, pomConfig);
     
