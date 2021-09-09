@@ -3,6 +3,8 @@ This module compliments *Angular Testbed*.  We suggest that you use one of the a
 
 In addition to using these tools, you should learn how to use *[ng-mocks](https://ng-mocks.sudo.eu/extra/quick-start)*  -- ***then*** you will be able to write high-quality, low-boilerplate tests; otherwise, "forget about it."
 
+![Tools](assets/tools-triad.png)
+
 1. **mergeConfig()** - accepts a list of configuration objects.  Precedence follows the es6 implementation of Object.assign().  The merge operation is "deep."  Arrays are not replaced -- the entries are concatenated. 
 
 
