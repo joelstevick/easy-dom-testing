@@ -33,7 +33,7 @@ When your test invokes an action, the POM automatically applies your configured 
 [This example (tbd)]() illustrates how to use *mergeConfig* and *POM*. 
 
 ## Notes
-- in the example, a common configuration object is used when setting up testing-library (the call to *render()*); only those declarations and providers that are specific to the tested component are included *in* the describe block.  You should adopt this pattern for you own project to reduce boilerplate.
+- in the example, a common configuration object is used when setting up testing-library (the call to *render()*); only those declarations and providers that are specific to the tested component are included *in* the describe block.  You should adopt this pattern for you own project, in order to reduce boilerplate.
   
 
 ***This page is under construction...*** 😁
