@@ -1,7 +1,7 @@
 # Introduction
 This module compliments *Angular Testbed*.  We suggest that you use one of the available helper-libraries that wrap Angular Testbed: [Testing-Library](https://testing-library.com/docs/angular-testing-library/intro/) or [Spectator](https://netbasal.com/spectator-v4-a-powerful-tool-to-simplify-your-angular-tests-bd65a0bf317e).
 
-In addition to using these tools, you should learn how to use *[ng-mocks](https://ng-mocks.sudo.eu/extra/quick-start)*  -- ***then*** you will be able to write high-quality, low-boilerplate tests; otherwise, "forget about it."
+In addition to using these tools, you should learn how to use (*MockComponent*, *MockProvider*) from *[ng-mocks](https://ng-mocks.sudo.eu/extra/quick-start)*  -- ***then*** you will be able to write high-quality, low-boilerplate tests; otherwise, "forget about it."
 
 ![Tools](assets/tools-triad.png)
 
