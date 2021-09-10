@@ -15,7 +15,7 @@ export class POM {
     if (!this.config.validate) {
       throw new Error('You must configure a validation object to use validate()');
     }
-    
+
     if (!this.config.validate[key]) {
       throw new Error(`unrecognized validation: ${key}, check your pom config file validate-property`);
     }
