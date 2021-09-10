@@ -26,6 +26,5 @@ export class POM {
     }
 
     this.config.actions[key].action(this.context, ...args);
-
   }
 }
