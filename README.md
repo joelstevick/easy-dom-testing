@@ -1,5 +1,5 @@
 # Introduction
-This module compliments *Angular Testbed*.  We suggest that you also use one of the available helper-libraries that wrap Angular Testbed: [Testing-Library](https://testing-library.com/docs/angular-testing-library/intro/) or [Spectator](https://netbasal.com/spectator-v4-a-powerful-tool-to-simplify-your-angular-tests-bd65a0bf317e).
+This module compliments *Angular Testbed*. 
 
 *ng-pom-testing* provides a utility function *mergeConfig* for re-using Angular Testbed configuration objects, and a utility class *POM* for implementing the [page-object-model pattern](https://martinfowler.com/bliki/PageObject.html).  A POM instance runs actions that are defined by a configuration object that you pass to the constructor.  The constructor to the POM also accepts a *context* object that is passed as the first argument to the action functions.  Normally, the context will include objects that were generated as part of the Angular Testbed setup -- fixtures, a dom api, and other functions.
 
