@@ -4,7 +4,7 @@ export interface PomAction {
 }
 export type PomValidateHandler = (context: unknown) => unknown;
 export interface PomConfig {
-  validate: Record<string, PomValidateHandler>;
+  validate?: Record<string, PomValidateHandler>;
   actions: Record<string, PomAction>;
 }
 
@@ -12,6 +12,10 @@ export class POM {
   constructor(private context: any, private config: PomConfig) {}
 
   validate(key: string) {
+    if (!this.config.validate) {
+      throw new Error('You must configure a validation object to use validate()');
+    }
+    
     if (!this.config.validate[key]) {
       throw new Error(`unrecognized validation: ${key}, check your pom config file validate-property`);
     }
