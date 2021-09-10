@@ -1,7 +1,7 @@
 # Introduction
 This module compliments *Angular Testbed*.  We suggest that you also use one of the available helper-libraries that wrap Angular Testbed: [Testing-Library](https://testing-library.com/docs/angular-testing-library/intro/) or [Spectator](https://netbasal.com/spectator-v4-a-powerful-tool-to-simplify-your-angular-tests-bd65a0bf317e).
 
-*ng-pom-testing* provides a utility function *mergeConfig* for re-using Angular Testbed configuration objects, and a utility class *POM* for implementing the [page-object-model pattern](https://martinfowler.com/bliki/PageObject.html).  A POM instance runs a *finite state machine* that is defined by a configuration object that you pass to the constructor.  The constructor to the POM also accepts a *context* object that is passed as the first argument to the validation and action functions.  Normally, the context will include objects that were generated as part of the Angular Testbed setup -- fixtures, a dom api, and other functions.
+*ng-pom-testing* provides a utility function *mergeConfig* for re-using Angular Testbed configuration objects, and a utility class *POM* for implementing the [page-object-model pattern](https://martinfowler.com/bliki/PageObject.html).  A POM instance runs actions that are defined by a configuration object that you pass to the constructor.  The constructor to the POM also accepts a *context* object that is passed as the first argument to the validation and action functions.  Normally, the context will include objects that were generated as part of the Angular Testbed setup -- fixtures, a dom api, and other functions.
 
 **The POM abstracts the underlying testing library** (testing-library, spectator, or angular testbed) similar to how a [test harness](https://en.wikipedia.org/wiki/Test_harness) implements an api for interacting with a component instance.  For example, you may want to define a single action in a test that interacts with more than a single component, or multiple components in succession like launching a modal that solicits user input -- this capability is out-of-scope for test harnesses.
 
@@ -26,9 +26,7 @@ The POM is particurily useful for [BDD](https://en.wikipedia.org/wiki/Behavior-d
 
     const pom = new POM({ container, detectChanges}, pomConfig);
     
-The POM configuration object specifies the various states that your component can enter and how to validate those states.  The POM configuration object also defines the actions that can be taken: the steps to be performed and the new state for the component after each action is completed.  
-
-When your test invokes an action, the POM automatically applies your configured validation logic for the new state.
+The POM configuration object defines the actions that can be taken: the steps to be performed.
 
 [This example (tbd)]() illustrates how to use *mergeConfig* and *POM*. 
 
