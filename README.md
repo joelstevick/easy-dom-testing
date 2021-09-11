@@ -31,6 +31,19 @@ The POM configuration object defines the actions that can be taken: the steps to
 [This example](https://github.com/joelstevick/ng-pom-testing-examples/tree/main/src/app/examples/components/counter) illustrates how to use *mergeConfig* and *POM*. 
 
 ## Notes
-- The example demonstrates...
+- The example implements a counter component.  
+  
+  The features for the counter are implemented using a BDD process for each of 3 user stories.  Users stories are implemented in two steps:
+  1. Definition
+  2. Implementation
+
+  Each step has its own spec-file.
+
+  The three user stories are:
+  1. The user needs a title
+  2. The user needs to be able to increment a counter
+  3. The user needs to see a progress control that displays the counter (the progress value).   The progress control should only appear if the counter > 0.
+
+
 - in the example, a common configuration object is used when configuring Angular Testbed; those declarations and providers that are unique dependencies for the tested component are specifed *in* the describe block.  You should adopt this pattern for you own project, in order to reduce boilerplate.
   
