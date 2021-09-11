@@ -45,5 +45,5 @@ The POM configuration object defines the actions that can be taken: the steps to
   3. The user needs to see a progress control that displays the counter (the progress value).   The progress control should only appear if the counter > 0.
 
 
-- In the example, a common configuration object is used when configuring Angular Testbed; those declarations and providers that are unique dependencies for the tested component are specifed *in* the describe block.  You should adopt this pattern for you own project, in order to reduce boilerplate.
+- In the example, a common configuration object is used when configuring Angular Testbed; those declarations and providers that are unique dependencies for the tested component are specifed *in* the describe block.  You should adopt this pattern for your own project, in order to reduce boilerplate.
   
