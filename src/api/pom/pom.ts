@@ -1,4 +1,4 @@
-export type PomActionHandler = (context: unknown, ...args: unknown[]) => unknown;
+export type PomActionHandler = (context: unknown, ...args: unknown[]) => any;
 export interface PomAction {
   action: PomActionHandler;
 }
