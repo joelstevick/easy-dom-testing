@@ -28,10 +28,9 @@ The POM is particurily useful for [BDD](https://en.wikipedia.org/wiki/Behavior-d
     
 The POM configuration object defines the actions that can be taken: the steps to be performed.
 
-[This example (tbd)]() illustrates how to use *mergeConfig* and *POM*. 
+[This example](https://github.com/joelstevick/ng-pom-testing-examples/tree/main/src/app/examples/components/counter) illustrates how to use *mergeConfig* and *POM*. 
 
 ## Notes
+- The example demonstrates...
 - in the example, a common configuration object is used when setting up testing-library (the call to *render()*); only those declarations and providers that are specific to the tested component are included *in* the describe block.  You should adopt this pattern for you own project, in order to reduce boilerplate.
   
-
-***This page is under construction...*** 😁
