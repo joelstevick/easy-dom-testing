@@ -32,5 +32,5 @@ The POM configuration object defines the actions that can be taken: the steps to
 
 ## Notes
 - The example demonstrates...
-- in the example, a common configuration object is used when setting up testing-library (the call to *render()*); only those declarations and providers that are specific to the tested component are included *in* the describe block.  You should adopt this pattern for you own project, in order to reduce boilerplate.
+- in the example, a common configuration object is used when configuring Angular Testbed; those declarations and providers that are unique dependencies for the tested component are specifed *in* the describe block.  You should adopt this pattern for you own project, in order to reduce boilerplate.
   
