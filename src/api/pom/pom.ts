@@ -28,6 +28,6 @@ export class POM {
       throw new Error(`unrecognized action: ${key}, check your pom config file actions-property`);
     }
 
-    this.config.actions[key].action(this.context, ...args);
+    return this.config.actions[key].action(this.context, ...args);
   }
 }
