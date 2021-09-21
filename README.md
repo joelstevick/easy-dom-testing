@@ -37,6 +37,7 @@ The POM configuration object defines the actions that can be taken: the steps to
   1. The user needs a title
   2. The user needs to be able to increment a counter
   3. The user needs to see a progress control that displays the counter (the progress value).   The progress control should only appear if the counter > 0.
+
 Each successive user story adds complexity to the testing requirements.
 
 - In the example, a common configuration object is used when configuring Angular Testbed for the 3rd user story; those declarations and providers that are unique dependencies for the tested component are specifed *in* the describe block.  You should adopt this pattern for your own project, in order to reduce boilerplate.
