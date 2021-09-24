@@ -40,5 +40,5 @@ The POM configuration object defines the actions that can be taken: the steps to
 
 Each successive user story adds complexity to the testing requirements.
 
-- In the example, a common configuration object is used when configuring Angular Testbed for the 3rd user story; those declarations and providers that are unique dependencies for the tested component are specifed *in* the describe block.  You should adopt this pattern for your own project, in order to reduce boilerplate.
+- In the 3rd user story, a common configuration object is used when configuring Angular Testbed; the declarations and providers that are unique dependencies for the tested component are specifed *in* the describe block.  You should adopt this pattern for your own project, in order to reduce boilerplate.
   
