@@ -42,3 +42,4 @@ Each successive user story adds complexity to the testing requirements.
 
 - In the 3rd user story, a common configuration object is used when configuring Angular Testbed; the declarations and providers that are unique dependencies for the tested component are specifed *in* the describe block.  You should adopt this pattern for your own project, in order to reduce boilerplate.
   
+[This instructional video](https://youtu.be/AoZMUgetYo8) can help you get started.
